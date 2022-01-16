@@ -1,0 +1,17 @@
+p{
+    display: -webkit-box; 
+    overflow: hidden;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical
+    /* width: 250px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis; */
+}
+
+.loadmore_btn_div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}

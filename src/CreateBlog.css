@@ -1,0 +1,158 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.createBlog_main{
+    position:absolute;
+    top:0;
+    z-index:-1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+}
+.createBlog_center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60vw;
+    height: 65vh;
+    border-radius: 10px;
+    background-color: whitesmoke;
+}
+
+
+/* --------------------title and body--------------------- */
+
+.createBlog_title_body_container{
+    display: flex;
+    flex: 50%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    padding: 30px;
+    
+}
+
+.createBlog_title_body_container .heading{
+    margin-bottom: 5rem;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    color: rgb(219, 82, 28);
+}
+
+.createBlog_title_body_container .title, .body{
+    width: 100%;
+    margin: 5px 0px;
+}
+
+.createBlog_title_body_container .input_field::placeholder{
+    color: rgb(170, 169, 169);
+    font-size: 14px;
+}
+
+/* -------------submit button-------------------- */
+
+.submit_btn_container{
+    width: 100%;
+    margin: 25px 0px;
+}
+.submit_btn{
+    width: 100%;
+    background-color: rgb(88, 10, 177);
+    color: white;
+}
+
+.submit_btn:hover{
+    background-color:  rgb(79, 10, 158);
+    color: white;
+}
+
+
+/* -----------------------image preview------------------------ */
+
+.createBlog_image_preview_container{
+    position: relative;
+    display: flex;
+    flex: 50%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    padding: 20px 40px 0px 40px;
+
+}
+
+.createBlog_image_preview_container > .Button{
+    position: absolute;
+    display: none;
+    top: 0;
+    right: 0;
+    z-index: 1;
+}
+.createBlog_image_preview_container > .Button > *{
+    color: red;
+}
+
+
+.createBlog_image_preview_container > .image_preview{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1.6px dashed  rgb(177, 176, 176);
+    width: 100%;
+    height: 20rem;
+}
+
+.createBlog_image_preview_container > .image_preview > img{
+    position: absolute;
+    max-width: 100%;
+    max-height: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.createBlog_image_preview_container > .image_preview > .upload_icon{
+    font-size: 5rem;
+    color: rgb(119, 0, 255);
+}
+.createBlog_image_preview_container > .image_preview > p{
+    color: rgb(119, 0, 255);
+}
+
+.createBlog_image_preview_container > .choose_file_btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    padding: 5px;
+    background-color: rgb(88, 10, 177);
+    width: 100%;
+    height: 35px;
+    font-size: .8rem;
+    border-radius: 30px;
+    color: white;
+    margin-top: 20px;
+}
+
+.remove_file_btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    padding: 5px;
+    background-color: red;
+    width: 100%;
+    height: 35px;
+    font-size: .8rem;
+    border-radius: 30px;
+    color: white;
+    margin-top: 20px;
+}
